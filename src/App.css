@@ -1,38 +1,398 @@
-.App {
-  text-align: center;
+/* Navbar */
+a.active {
+
+    font-weight: bold;
+    border-bottom: 1px solid white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu.active {
+
+    font-weight: bold;
+    border-bottom: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link {
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menu {
+    color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+    padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: red;
+}
+
+.ani {
+    position: relative;
+}
+
+.a0,.a,.s{
+    animation: dynamic 4s infinite ease-out;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+}
+
+@keyframes dynamic {
+    0% {
+        transform: rotateX(360deg);
+    }
+
+    80% {
+        transform: rotateX(360deg);
+    }
+}
+
+
+
+/* Home  */
+/* Content */
+
+.content {
+    /* background-color: aqua; */
+    /* height: 50vh; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    animation: 2s infinite alternate-reverse homeimg;
+}
+@media(width<=800px){
+    .image{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 46vh;
+    animation: 2s infinite alternate-reverse homeimg;
+    }
+}
+@media(width<=800px){
+    .margin{
+    margin-top: 20px;
+    }
+}
+
+img {
+    width: 70%;
+}
+@media(width<=800px) {
+    img{
+        width:70vw;
+    }
+}
+
+@keyframes homeimg {
+    0% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(-20px);
+    }
+}
+
+.greet {
+    /* background-color: aliceblue; */
+    font-size: 8px;
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+}
+
+.intro {
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 15px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.name {
+    color: red;
+    width: 0px;
+    display: inline-flex;
+    border-right: 2px solid black;
+    overflow: hidden;
+    animation: 5s infinite alternate-reverse name;
+}
+
+@keyframes name {
+    0% {
+        width: 0px;
+        border-right: none;
+    }
+
+    25% {
+        width: 0px;
+        border-right: none;
+    }
+
+    35% {
+        width: 25px;
+        border-right: 2px solid black;
+    }
+
+    40% {
+        border-right: none;
+    }
+
+    45% {
+        width: 47px;
+        border-right: 2px solid black;
+    }
+
+    50% {
+        border-right: none;
+    }
+
+    55% {
+        width: 66px;
+        border-right: 2px solid black;
+    }
+
+    60% {
+        border-right: none;
+    }
+
+    65% {
+        width: 90px;
+        border-right: 2px solid black;
+    }
+
+    70% {
+        border-right: none;
+    }
+
+    75% {
+        width: 112px;
+        border-right: 2px solid black;
+    }
+
+    80% {
+        border-right: none;
+    }
+
+    85% {
+        width: 135px;
+        border-right: 2px solid black;
+    }
+
+    90% {
+        border-right: none;
+    }
+
+    95% {
+        width: 170px;
+        border-right: 2px solid black;
+    }
+
+    100% {
+        width: 160px;
+        border-right: none;
+    }
+}
+
+.detail {
+    font-size: 11px;
+    color: grey;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    font-weight: bold;
+    color: white;
+}
+
+.downloadcvv {
+    margin-top: 20px;
+}
+.margin{
+    margin-bottom: 20px;
+}
+.s{
+    display: inline-flex;
+    color: red;
+}
+.a{
+    color: black;
+}
+
+/* Footer  */
+
+.footer {
+    margin-top: auto;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: bisque;
+    margin-left: 0px;
+    background-color: #d32f2f;
+    color: white;
+}
+.copyright{
+    text-align: center;
+}
+
+/* body  */
+.body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* anchor  */
+.contact{
+    display: flex;
+    justify-content: center;
+}
+.contact a{
+    padding-left: 5px;
+}
+a:hover{
+    color:rgb(247, 135, 115);
+}
+
+
+
+
+/* About  */
+.about{
+    height: 210px;
+    margin-top: 80px;
+}
+.abtname{
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+.welcome{
+    font-weight: bold;
+}
+.aboutimg{
+            width: 160px;
+            height: 160px;
+            background-color: red;
+            border: 2px solid red;
+            border-radius: 100px;
+        animation: 2s infinite alternate-reverse abtimg;
+}
+
+.aniaboutimg{
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes abtimg{
+    from {
+        width: 160px;
+        height: 160px;
+    }
+
+    to {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+
+/* contact  */
+.btn-danger{
+    background-color: red;
+    margin: 10px;
+}
+
+.profile{
+    color: black;
+}
+.account{
+    color: black;
+}
+
+
+/* Button  */
+.btndown {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    color: black;
+}
+.btndown a{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+.btn-one {
+    color: black;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.btn-one span {
+    transition: all 0.3s;
+}
+
+.btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: black;
+    border-bottom-color: black;
+    transform: scale(0.1, 1);
+}
+
+.btn-one:hover span {
+    letter-spacing: 2px;
+}
+
+.btn-one:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255, 0, 0, 0.137);
+}
+.btn-one:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
 }
