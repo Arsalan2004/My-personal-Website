@@ -5,6 +5,10 @@ a.active {
     border-bottom: 1px solid white;
 }
 
+.row{
+    background-color: white;
+}
+
 .menu.active {
 
     font-weight: bold;
@@ -410,6 +414,6 @@ a:hover{
     flex-flow: wrap row;
     justify-content: center;
 }
-.divgallery {
+/* .divgallery {
     background-color: rgba(0, 0, 255, 0.281);
-}
+} */
