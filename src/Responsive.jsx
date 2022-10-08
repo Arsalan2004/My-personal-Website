@@ -100,6 +100,13 @@ const ResponsiveAppBar = () => {
                       <NavLink
                         exact="true"
                         className="nav-link menu"
+                        to="/photos"
+                      >
+                        Photos
+                      </NavLink>
+                      <NavLink
+                        exact="true"
+                        className="nav-link menu"
                         to="/service"
                       >
                         Services
@@ -110,13 +117,6 @@ const ResponsiveAppBar = () => {
                         to="/contact"
                       >
                         Contact
-                      </NavLink>
-                      <NavLink
-                        exact="true"
-                        className="nav-link menu"
-                        to="/photos"
-                      >
-                        Photos
                       </NavLink>
                     </Menu>
                   </Box>
@@ -147,14 +147,14 @@ const ResponsiveAppBar = () => {
                     <NavLink exact="true" className="nav-link" to="/about">
                       About
                     </NavLink>
+                    <NavLink exact="true" className="nav-link" to="/photos">
+                      Photos
+                    </NavLink>
                     <NavLink exact="true" className="nav-link" to="/service">
                       Services
                     </NavLink>
                     <NavLink exact="true" className="nav-link" to="/contact">
                       Contact
-                    </NavLink>
-                    <NavLink exact="true" className="nav-link" to="/photos">
-                      Photos
                     </NavLink>
                   </Box>
 
