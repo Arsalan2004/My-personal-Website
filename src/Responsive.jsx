@@ -111,6 +111,13 @@ const ResponsiveAppBar = () => {
                       >
                         Contact
                       </NavLink>
+                      <NavLink
+                        exact="true"
+                        className="nav-link menu"
+                        to="/photos"
+                      >
+                        Photos
+                      </NavLink>
                     </Menu>
                   </Box>
                   <Typography
@@ -145,6 +152,9 @@ const ResponsiveAppBar = () => {
                     </NavLink>
                     <NavLink exact="true" className="nav-link" to="/contact">
                       Contact
+                    </NavLink>
+                    <NavLink exact="true" className="nav-link" to="/photos">
+                      Photos
                     </NavLink>
                   </Box>
 

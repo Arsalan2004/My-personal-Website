@@ -5,7 +5,7 @@ import homeimg from "../images/home.jpg";
 export default function Home() {
   return (
     <>
-      <div className="container-fluid">
+      <div className="divgallery">
         <div className="row">
           <div className="col-md-4 mx-auto image">
             <img src={homeimg} alt="" />

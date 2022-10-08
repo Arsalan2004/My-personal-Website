@@ -9,6 +9,7 @@ import Contact from './Components/Contact';
 import Services from './Components/Services';
 import Footer from './Footer';
 import ResponsiveAppBar from './Responsive';
+import Photos from './Components/Photos';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route exact="true" path="/service" element={<Services />} />
               <Route exact="true" path="/contact" element={<Contact />} />
               <Route exact="true" path="/about" element={<About />} />
+              <Route exact="true" path="/photos" element={<Photos />} />
             </Routes>
           </div>
         </div>
